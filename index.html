@@ -126,32 +126,34 @@
   <meta name="google-site-verification" content="bf1ab830fe01bdc3" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kazungu Gerald (KG) | People & Organizational Cultures Coach — Kampala, Uganda</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Cormorant:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,700&family=Manrope:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
-    /* Deep rich greens — more editorial, less generic */
-    --forest: #0e2a1e;
-    --forest-mid: #1e4d35;
-    --sage: #3d7a56;
-    --sage-light: #6aab85;
+    /* ── PRIMARY: Deep Midnight Forest ── */
+    --forest: #112217;        /* Very deep, almost black-green */
+    --forest-mid: #1c3d2a;   /* Rich forest */
+    --sage: #2e6644;          /* True sage green */
+    --sage-light: #4d8c63;   /* Lighter sage for accents */
 
-    /* Warm refined gold — more amber/bronze, less AI-yellow */
-    --gold: #b8903a;
-    --gold-light: #d4aa5e;
-    --gold-pale: #f0deb0;
+    /* ── ACCENT: Warm Copper-Bronze (NOT digital gold) ── */
+    --gold: #a67c45;          /* Real copper-bronze */
+    --gold-light: #c49a5e;   /* Lighter copper */
+    --gold-pale: #e8d5b0;    /* Pale champagne */
 
-    /* Backgrounds — warm parchment tones, not sterile white */
-    --cream: #f5f0e8;
-    --cream-dark: #ede7db;
-    --warm-white: #faf7f2;
+    /* ── BACKGROUNDS: Warm Stone & Parchment ── */
+    --cream: #f2ece0;         /* Warm parchment — like quality paper */
+    --cream-dark: #e8e0d0;   /* Slightly darker stone */
+    --warm-white: #faf6ef;   /* Warm off-white — never pure white */
+    --stone: #d4c9b5;        /* Stone gray-beige for dividers */
 
-    /* Text */
-    --charcoal: #181818;
-    --mid-gray: #52504d;
-    --light-gray: #e2ddd6;
+    /* ── TEXT: Rich & Human ── */
+    --charcoal: #141414;      /* Near black — not pure black */
+    --mid-gray: #4a4843;     /* Warm gray — not cold */
+    --light-gray: #ddd6c8;   /* Warm light gray */
 
-    /* Accent — subtle terracotta warmth */
-    --terracotta: #8b4a3a;
+    /* ── DEPTH TONES ── */
+    --deep-dark: #0a160f;    /* Deepest background */
+    --rich-dark: #0f1e14;    /* Section backgrounds */
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -163,12 +165,16 @@
   }
 
   body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Manrope', sans-serif;
     background: var(--warm-white);
     color: var(--charcoal);
     overflow-x: hidden;
     max-width: 100vw;
     width: 100%;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* ── NAV ── */
@@ -176,19 +182,19 @@
     position: fixed; top: 0; width: 100%; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
     padding: 1.2rem 5%;
-    background: rgba(10, 22, 15, 0.97);
+    background: rgba(8, 13, 10, 0.98);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(201,168,76,0.25);
     transition: all 0.3s;
   }
   .nav-logo {
-    font-family: 'Cormorant Garamond', serif;
-    color: var(--gold-light); font-weight: 600; letter-spacing: 0.05em;
+    font-family: 'Libre Baskerville', serif;
+    color: var(--gold-light); font-weight: 400; letter-spacing: 0.08em;
     font-size: 1.3rem;
     letter-spacing: 0.12em;
     text-decoration: none;
   }
-  .nav-logo span { color: #fff; font-size: 0.75rem; display: block; letter-spacing: 0.2em; font-family: 'Outfit', sans-serif; font-weight: 300; }
+  .nav-logo span { color: #fff; font-size: 0.75rem; display: block; letter-spacing: 0.2em; font-family: 'Manrope', sans-serif; font-weight: 300; }
   .nav-links { display: flex; gap: 2.2rem; list-style: none; }
   .nav-links a {
     color: rgba(255,255,255,0.8);
@@ -216,7 +222,7 @@
   /* ── HERO ── */
   #hero {
     min-height: 100vh;
-    background: linear-gradient(160deg, #0b1f15 0%, #0e2a1e 40%, #152b1f 70%, #1a3328 100%);
+    background: linear-gradient(160deg, #090f0b 0%, #112217 35%, #0f1e14 65%, #152c1e 100%);
     display: flex; align-items: center;
     position: relative; overflow: hidden;
     padding: 8rem 5% 5rem;
@@ -224,9 +230,9 @@
   .hero-pattern {
     position: absolute; inset: 0;
     background-image: 
-      radial-gradient(ellipse at 15% 85%, rgba(184,144,58,0.12) 0%, transparent 45%),
-      radial-gradient(ellipse at 85% 15%, rgba(61,122,86,0.1) 0%, transparent 45%),
-      radial-gradient(ellipse at 50% 50%, rgba(14,42,30,0.4) 0%, transparent 70%);
+      radial-gradient(ellipse at 10% 90%, rgba(166,124,69,0.1) 0%, transparent 40%),
+      radial-gradient(ellipse at 90% 10%, rgba(46,102,68,0.08) 0%, transparent 40%),
+      radial-gradient(ellipse at 60% 40%, rgba(17,34,23,0.5) 0%, transparent 65%);
   }
   .hero-lines {
     position: absolute; inset: 0;
@@ -240,8 +246,8 @@
   .hero-text { animation: fadeUp 0.9s ease both; }
   .hero-badge {
     display: inline-flex; align-items: center; gap: 0.5rem;
-    background: rgba(201,168,76,0.15);
-    border: 1px solid rgba(201,168,76,0.4);
+    background: rgba(166,124,69,0.12);
+    border: 1px solid rgba(166,124,69,0.35);
     color: var(--gold-light);
     padding: 0.4rem 1rem;
     border-radius: 100px;
@@ -253,7 +259,7 @@
   }
   .hero-badge::before { content: '●'; font-size: 0.5rem; animation: pulse 2s infinite; }
   .hero-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-size: clamp(2.8rem, 5vw, 5rem); letter-spacing: -0.03em;
     color: #fff;
     line-height: 1.1;
@@ -266,7 +272,7 @@
     display: block;
   }
   .hero-subtitle {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 1rem;
     color: var(--sage);
     letter-spacing: 0.2em;
@@ -337,13 +343,13 @@
     object-fit: cover;
     background: linear-gradient(135deg, var(--forest-mid), var(--sage));
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-size: 2.8rem;
     color: var(--gold-light);
     font-weight: 900;
   }
   .profile-name {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-size: 1.5rem;
     color: #fff;
     font-weight: 700;
@@ -351,8 +357,8 @@
   }
   .profile-role { color: var(--gold-light); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.5rem; font-weight: 600; }
   .profile-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; margin-bottom: 1.5rem; }
-  .stat { text-align: center; padding: 0.8rem 0.4rem; background: rgba(201,168,76,0.08); border-radius: 8px; border: 1px solid rgba(201,168,76,0.12); }
-  .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--gold-light); font-weight: 700; display: block; }
+  .stat { text-align: center; padding: 0.8rem 0.4rem; background: rgba(166,124,69,0.08); border-radius: 8px; border: 1px solid rgba(201,168,76,0.12); }
+  .stat-num { font-family: 'Fraunces', serif; font-size: 1.4rem; color: var(--gold-light); font-weight: 700; display: block; }
   .stat-lbl { font-size: 0.65rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.1em; }
   .profile-socials { display: flex; gap: 0.8rem; justify-content: center; }
   .social-btn {
@@ -382,7 +388,7 @@
   }
   .section-label::before { content: ''; display: block; width: 40px; height: 1px; background: var(--sage); }
   .section-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-size: clamp(2.2rem, 4vw, 3.2rem); letter-spacing: -0.02em;
     color: var(--forest);
     line-height: 1.2;
@@ -394,13 +400,13 @@
   .about-image-block { position: relative; }
   .about-image-wrap {
     width: 100%; padding-bottom: 110%;
-    background: linear-gradient(145deg, #0b1f15 0%, #1e4d35 100%);
+    background: linear-gradient(145deg, #112217 0%, #1c3d2a 100%);
     border-radius: 4px 60px 4px 60px;
     position: relative; overflow: hidden;
     display: flex; align-items: center; justify-content: center;
   }
   .about-initials {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-size: 8rem;
     color: rgba(201,168,76,0.25);
     font-weight: 900;
@@ -415,16 +421,16 @@
     border-radius: 50%;
     width: 100px; height: 100px;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-weight: 900; font-size: 1.6rem;
     line-height: 1;
   }
-  .about-badge span { font-family: 'Outfit', sans-serif; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+  .about-badge span { font-family: 'Manrope', sans-serif; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
   .about-text p { color: var(--mid-gray); line-height: 1.9; margin-bottom: 1.2rem; font-size: 1rem; }
   .about-roles { display: flex; flex-direction: column; gap: 0.6rem; margin: 1.5rem 0; }
   .role-tag {
     display: inline-flex; align-items: center; gap: 0.7rem;
-    background: linear-gradient(170deg, #0b1f15 0%, #0e2a1e 50%, #122618 100%);
+    background: linear-gradient(170deg, #090f0b 0%, #112217 45%, #0f1c14 100%);
     color: #fff;
     padding: 0.6rem 1.2rem;
     border-radius: 100px;
@@ -437,7 +443,7 @@
   /* ── SERVICES ── */
   #services {
     padding: 7rem 5%;
-    background: linear-gradient(160deg, #0b1f15 0%, #0e2a1e 60%, #142418 100%);
+    background: linear-gradient(160deg, #090f0b 0%, #112217 55%, #0f1e14 100%);
     position: relative; overflow: hidden;
   }
   #services::before {
@@ -471,14 +477,14 @@
   .service-card:hover::after { transform: scaleX(1); }
   .service-icon {
     width: 52px; height: 52px;
-    background: rgba(201,168,76,0.12);
+    background: rgba(166,124,69,0.1);
     border-radius: 12px;
     display: flex; align-items: center; justify-content: center;
     font-size: 1.5rem;
     margin-bottom: 1.2rem;
     border: 1px solid rgba(184,144,58,0.25);
   }
-  .service-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 0.7rem; }
+  .service-title { font-family: 'Fraunces', serif; font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 0.7rem; }
   .service-desc { color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 1.7; }
 
   /* ── WHY KG ── */
@@ -496,12 +502,12 @@
     border-radius: 0 8px 8px 0;
     cursor: default;
   }
-  .pillar:hover { background: var(--cream-dark); border-left-color: var(--gold); }
+  .pillar:hover { background: var(--cream); border-left-color: var(--gold); }
   .pillar-icon { font-size: 1.8rem; flex-shrink: 0; width: 40px; }
   .pillar-title { font-weight: 700; color: var(--forest); margin-bottom: 0.3rem; }
   .pillar-text { color: var(--mid-gray); font-size: 0.9rem; line-height: 1.7; }
   .why-visual {
-    background: linear-gradient(145deg, #0b1f15 0%, #1e4d35 100%);
+    background: linear-gradient(145deg, #112217 0%, #1c3d2a 100%);
     border-radius: 20px;
     padding: 3rem 2.5rem;
     color: #fff;
@@ -510,13 +516,13 @@
   .why-visual::before {
     content: '"';
     position: absolute; top: -1rem; left: 1.5rem;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-size: 10rem;
     color: rgba(201,168,76,0.15);
     line-height: 1;
   }
   .why-quote {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-size: 1.5rem;
     font-style: italic;
     line-height: 1.6;
@@ -541,7 +547,7 @@
   /* ── TESTIMONIALS ── */
   #testimonials {
     padding: 7rem 5%;
-    background: var(--cream-dark);
+    background: var(--cream);
   }
   .testimonials-header { text-align: center; margin-bottom: 4rem; }
   .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1100px; margin: 0 auto; }
@@ -556,7 +562,7 @@
   .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
   .testimonial-card::before {
     content: '"';
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-size: 4rem;
     color: var(--gold);
     line-height: 1;
@@ -590,7 +596,7 @@
   }
   .workshop-card:hover { border-color: var(--sage); box-shadow: 0 8px 32px rgba(26,61,43,0.1); }
   .workshop-header {
-    background: linear-gradient(135deg, #0e2a1e, #1e4d35);
+    background: linear-gradient(135deg, #112217, #1c3d2a);
     padding: 2rem 1.8rem;
     position: relative; overflow: hidden;
   }
@@ -602,7 +608,7 @@
     background: rgba(201,168,76,0.15);
   }
   .workshop-icon { font-size: 2rem; margin-bottom: 0.8rem; position: relative; z-index: 1; }
-  .workshop-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #fff; font-weight: 700; position: relative; z-index: 1; }
+  .workshop-title { font-family: 'Fraunces', serif; font-size: 1.1rem; color: #fff; font-weight: 700; position: relative; z-index: 1; }
   .workshop-body { padding: 1.5rem 1.8rem; }
   .workshop-desc { color: var(--mid-gray); font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
   .workshop-tag {
@@ -620,7 +626,7 @@
   /* ── BOOKING / CONTACT ── */
   #contact {
     padding: 7rem 5%;
-    background: #080f0a;
+    background: #060908;
     position: relative; overflow: hidden;
   }
   #contact::before {
@@ -639,7 +645,7 @@
   }
   .contact-icon {
     width: 44px; height: 44px;
-    background: rgba(201,168,76,0.12);
+    background: rgba(166,124,69,0.1);
     border-radius: 8px; border: 1px solid rgba(184,144,58,0.25);
     display: flex; align-items: center; justify-content: center;
     font-size: 1.1rem; flex-shrink: 0;
@@ -656,7 +662,7 @@
     border-radius: 16px;
     padding: 2.5rem;
   }
-  .form-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: #fff; margin-bottom: 1.8rem; font-weight: 700; }
+  .form-title { font-family: 'Fraunces', serif; font-size: 1.4rem; color: #fff; margin-bottom: 1.8rem; font-weight: 700; }
   .form-group { margin-bottom: 1.2rem; }
   .form-group label { display: block; color: rgba(255,255,255,0.6); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; }
   .form-group input,
@@ -668,7 +674,7 @@
     border-radius: 6px;
     padding: 0.85rem 1rem;
     color: #fff;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 0.9rem;
     transition: border-color 0.2s;
     outline: none;
@@ -678,7 +684,7 @@
   .form-group input:focus,
   .form-group select:focus,
   .form-group textarea:focus { border-color: var(--gold); }
-  .form-group select option { background: #080f0a; }
+  .form-group select option { background: #060908; }
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
   .form-submit {
     width: 100%;
@@ -698,7 +704,7 @@
 
   /* ── FOOTER ── */
   footer {
-    background: #080f0a;
+    background: #060908;
     padding: 3rem 5% 2rem;
     border-top: 1px solid rgba(201,168,76,0.15);
   }
@@ -788,14 +794,14 @@
   .mobile-nav {
     display: none;
     position: fixed; inset: 0; z-index: 200;
-    background: #080f0a;
+    background: #060908;
     flex-direction: column;
     align-items: center; justify-content: center;
     gap: 2rem;
   }
   .mobile-nav.open { display: flex; }
   .mobile-nav a {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
     font-size: 2rem;
     color: #fff;
     text-decoration: none;
@@ -1340,7 +1346,7 @@
 </section>
 
 <!-- PACKAGES / PRICING -->
-<section id="packages" style="padding:7rem 5%;background:linear-gradient(160deg,#080f0a 0%,#0e2a1e 50%,#122618 100%);position:relative;overflow:hidden;">
+<section id="packages" style="padding:7rem 5%;background:linear-gradient(160deg,#080c09 0%,#112217 50%,#0e1c13 100%);position:relative;overflow:hidden;">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(201,168,76,0.08) 0%,transparent 60%);"></div>
   <div style="text-align:center;margin-bottom:4rem;position:relative;" class="reveal">
     <div style="display:flex;align-items:center;gap:1rem;justify-content:center;font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:1rem;">Service Packages</div>
@@ -1460,7 +1466,7 @@
 </section>
 
 <!-- GALLERY / IN ACTION -->
-<section id="gallery" style="padding:7rem 5%;background:linear-gradient(170deg,#07110a 0%,#0b1c11 50%,#0e2118 100%);overflow:hidden;">
+<section id="gallery" style="padding:7rem 5%;background:linear-gradient(170deg,#070c08 0%,#0f1a11 50%,#0b1710 100%);overflow:hidden;">
   <div style="text-align:center;margin-bottom:3.5rem;">
     <div style="display:flex;align-items:center;gap:1rem;justify-content:center;font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;color:#4a8c63;font-weight:600;margin-bottom:1rem;">
       <span></span>Real Moments
@@ -1680,7 +1686,7 @@
 </div>
 
 <!-- SIGNATURE SECTION -->
-<div style="background:linear-gradient(160deg,#060d08 0%,#0a1a10 50%,#0e2218 100%);padding:5rem 5%;text-align:center;position:relative;overflow:hidden;">
+<div style="background:linear-gradient(160deg,#050808 0%,#0a1410 50%,#0d1c13 100%);padding:5rem 5%;text-align:center;position:relative;overflow:hidden;">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(201,168,76,0.08) 0%,transparent 70%);"></div>
   <div style="max-width:700px;margin:0 auto;position:relative;" class="reveal">
     <!-- Decorative line -->
